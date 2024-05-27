@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import "../css/style.css";
+import '../css/style.css';
 
 const StyledLayout = styled.div`
   display: grid;
@@ -39,16 +39,16 @@ const Footer = styled.footer`
 `;
 
 const DefaultHeader = () => {
-  return <>Default Header</>
-}
+  return <>Default Header</>;
+};
 
 const DefaultSidebar = () => {
-  return <>Default Sidebar</>
-}
+  return <>Default Sidebar</>;
+};
 
 const DefaultFooter = () => {
-  return <>Default Footer</>
-}
+  return <>Default Footer</>;
+};
 
 const Layout = ({ children, header, sidebar, footer }) => {
   const HeaderContent = header || DefaultHeader;
@@ -68,7 +68,9 @@ const Layout = ({ children, header, sidebar, footer }) => {
             <Main>{children}</Main>
           </div>
           <div className="col-12 col-lg-4">
-            <Sidebar><SidebarContent /></Sidebar>
+            <Sidebar>
+              <SidebarContent />
+            </Sidebar>
           </div>
         </div>
       </div>

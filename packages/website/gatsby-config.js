@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Meta Music Imperium`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-sitemap"]
+  plugins: ['gatsby-plugin-sitemap'],
 };
