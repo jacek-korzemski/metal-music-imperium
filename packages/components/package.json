@@ -1,0 +1,23 @@
+{
+  "name": "@m-m-m/components",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "babel src --out-dir dist --watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.6",
+    "@babel/core": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "@babel/preset-react": "^7.24.6"
+  },
+  "dependencies": {
+    "styled-components": "^6.1.11"
+  }
+}

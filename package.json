@@ -1,0 +1,17 @@
+{
+  "name": "m-m-m",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^1.13.3"
+  }
+}
