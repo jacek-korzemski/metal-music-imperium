@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const StyledTopMenu = styled.nav`
   ul {
@@ -37,7 +38,7 @@ const TopMenu = ({ elements }) => {
       <ul>
         {elements.map((elem, index) => (
           <li key={index}>
-            <a href={elem.href}>{elem.name}</a>
+            <Link href={elem.href}>{elem.name}</Link>
           </li>
         ))}
       </ul>
