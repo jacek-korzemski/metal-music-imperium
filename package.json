@@ -6,12 +6,15 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "concurrently \"yarn turbo run dev --scope=@m-m-m/* --no-cache\" \"yarn workspace @m-m-m/mock-server run start\" \"yarn workspace @m-m-m/website run dev\"",
     "lint": "turbo run lint",
     "format": "prettier --write ."
   },
   "devDependencies": {
+    "babel-loader": "^9.1.3",
+    "concurrently": "^8.2.2",
     "prettier": "^3.2.5",
     "turbo": "^1.13.3"
-  }
+  },
+  "packageManager": "yarn@4.2.2"
 }

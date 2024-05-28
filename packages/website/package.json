@@ -1,29 +1,17 @@
 {
   "name": "@m-m-m/website",
-  "version": "1.0.0",
-  "private": true,
-  "description": "meta-music-imperium",
-  "author": "Jacek Korzemski",
-  "keywords": [
-    "gatsby"
-  ],
+  "packageManager": "yarn@4.2.2",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@m-m-m/components": "workspace:*",
     "@m-m-m/contexts": "workspace:*",
     "@m-m-m/hooks": "workspace:*",
-    "gatsby": "^5.13.5",
-    "gatsby-plugin-sitemap": "^6.13.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "prettier": "^3.2.5"
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "@m-m-m/components",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "src/_index.js",
   "license": "MIT",
   "peerDependencies": {
     "react": "^18.3.1",

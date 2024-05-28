@@ -1,6 +1,7 @@
 /*
   RESET CSS
 */
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -127,13 +128,17 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  overflow-y: scroll;
 }
 
 /*
@@ -777,9 +782,17 @@ table {
 /*
   Global Styles
 */
+body {
+  background-image: url("../assets/1.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 16px;
 }
@@ -790,9 +803,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'MedievalSharp', cursive;
-  font-weight: 600;
-  font-style: normal;
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
 }
 
 h1 {
@@ -836,7 +848,7 @@ p {
   margin-right: 15px;
 }
 .post::after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -855,4 +867,4 @@ p {
   margin: 16px auto;
   width: 100%;
   height: auto;
-}
+}/*# sourceMappingURL=style.css.map */
