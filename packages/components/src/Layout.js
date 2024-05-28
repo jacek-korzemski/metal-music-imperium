@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import TopMenu from './TopMenu';
+import LogoText from './LogoText';
+import { useDefaultMenu } from '@m-m-m/hooks';
 
 const StyledLayout = styled.div`
   display: flex;
@@ -10,6 +13,11 @@ const StyledLayout = styled.div`
 `;
 
 const Header = styled.header`
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   background-color: black;
   color: #fff;
   padding: 1rem;
@@ -32,7 +40,13 @@ const Footer = styled.footer`
 `;
 
 const DefaultHeader = () => {
-  return <>Default Header</>;
+  const menuItems = useDefaultMenu();
+  return (
+    <>
+      <LogoText />
+      <TopMenu elements={menuItems} />
+    </>
+  );
 };
 
 const DefaultSidebar = () => {
@@ -43,10 +57,15 @@ const DefaultFooter = () => {
   return <>Default Footer</>;
 };
 
-const Layout = ({ children, header, sidebar, footer }) => {
+const DefaultHero = () => {
+  return null;
+};
+
+const Layout = ({ children, header, sidebar, footer, hero }) => {
   const HeaderContent = header || DefaultHeader;
   const SidebarContent = sidebar || DefaultSidebar;
   const FooterContent = footer || DefaultFooter;
+  const HeroContent = hero || DefaultHero;
 
   return (
     <StyledLayout>
@@ -56,6 +75,7 @@ const Layout = ({ children, header, sidebar, footer }) => {
         </div>
       </Header>
       <Main>
+        <HeroContent />
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-8">{children}</div>

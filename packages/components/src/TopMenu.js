@@ -12,6 +12,7 @@ const StyledTopMenu = styled.nav`
       margin: 0;
       padding: 0;
       a {
+        font-weight: 400;
         display: block;
         padding-bottom: 4px;
         border-bottom: 1px solid transparent;
