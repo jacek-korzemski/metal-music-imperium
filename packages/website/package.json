@@ -2,7 +2,7 @@
   "name": "@m-m-m/website",
   "packageManager": "yarn@4.2.2",
   "scripts": {
-    "dev": "node -e \"const fs = require('fs'); const rimraf = require('rimraf'); if (fs.existsSync('.next')) { rimraf.sync('.next'); }\" && next dev",
+   "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },

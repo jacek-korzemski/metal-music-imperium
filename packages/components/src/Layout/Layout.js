@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import TopMenu from './TopMenu';
-import LogoText from './LogoText';
 import { useDefaultMenu } from '@m-m-m/hooks';
+import { LogoText, TopMenu } from '../_index';
 
 const StyledLayout = styled.div`
   display: flex;
